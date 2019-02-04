@@ -22,6 +22,8 @@ const integers = [13, 25, 6, 3, 11, 2, 18, 7, 21, 1, 29, 20, 12, 8];
 
 
 //done on a single line
-const chainedArray = integers.sort((a, b)=> b - a).filter(number=> number > 19).map(number => (number * 1.5) -1).reduce((accumaltor, current ) => accumaltor += current)
+const chainedArray = integers.sort((a, b)=> b - a)
+.filter(number=> number < 19).map(number => (number * 1.5) -1)
+.reduce((accumaltor, current) => accumaltor += current, 0)
 console.log(chainedArray)
 
